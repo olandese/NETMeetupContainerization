@@ -5,7 +5,7 @@
     },
     "resources": [
       {
-        "name": "helloContainerGroup",
+        "name": "NETMeetup",
         "type": "Microsoft.ContainerInstance/containerGroups",
         "apiVersion": "2017-10-01-preview",
         "location": "[resourceGroup().location]",
@@ -98,7 +98,7 @@
     "outputs": {
       "containerIPv4Address": {
         "type": "string",
-        "value": "[reference(resourceId('Microsoft.ContainerInstance/containerGroups/', 'helloContainerGroup')).ipAddress.ip]"
+        "value": "[reference(resourceId('Microsoft.ContainerInstance/containerGroups/', 'NETMeetup')).ipAddress.ip]"
       }
     }
   }
