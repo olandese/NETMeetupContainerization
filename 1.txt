@@ -9,3 +9,7 @@ docker run --rm -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 143
 docker pull microsoft/mssql-server-windows-developer
 
 docker run --rm -d -p 1433:1433 -e sa_password=Q1w2e3r4t5y6 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
+
+## Get Docker container ip
+
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerid_or_name>
