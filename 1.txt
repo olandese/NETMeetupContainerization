@@ -13,3 +13,7 @@ docker run --rm -d -p 1433:1433 -e sa_password=Q1w2e3r4t5y6 -e ACCEPT_EULA=Y mic
 ## Get Docker container ip
 
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerid_or_name>
+
+## Linux Docker Mario
+
+docker run -d -p 8600:8080 pengbai/docker-supermario
