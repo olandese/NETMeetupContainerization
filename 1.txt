@@ -24,6 +24,8 @@ docker run --rm  -p 8080:80 -d -v c:\temp:c:\temp\netmeetup:RW netmeetup:latest
 
 docker run --rm -d netmeetup:latest
 
+docker pull vicompany/vicompany-storageprototype
+
 docker run --rm -p 8080:80 -d -v c:\temp:c:\temp:RW vicompany/vicompany-storageprototype
 
 ## Portainer 
